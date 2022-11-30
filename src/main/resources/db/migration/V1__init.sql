@@ -1,0 +1,24 @@
+CREATE TABLE  IF NOT EXISTS estudiante{
+id SERIAL,
+nombre  VARCHAR (100) NOT NULL,
+apellido VARCHAR (100) NOT NULL,
+email VARCHAR (100) NOT NULL,
+PRIMARY KEY (id),
+UNIQUE (email)
+};
+
+CREATE TABLE IF NOT EXISTS cuestionario{
+id SERIAL,
+calificacion DECIMAL (5,2) NOT NULL,
+descripcion VARCHAR (100) NOT NULL,
+PRIMARY KEY (id)
+};
+
+CREATE TABLE IF NOT EXISTS preguntas{
+id SERIAL,
+pregunta VARCHAR (100) NOT NULL,
+respuesta VARCHAR (100) NOT NULL,
+PRIMARY KEY (id)
+};
+
+
